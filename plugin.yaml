@@ -1,0 +1,4 @@
+name: "arg-demo"
+version: "0.0.1"
+usage: "Hello World"
+command: "echo Hello World"
