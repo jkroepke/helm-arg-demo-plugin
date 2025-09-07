@@ -1,4 +1,11 @@
 name: "arg-demo"
 version: "0.0.1"
 usage: "Hello World"
-command: "echo Hello World"
+platformCommand:
+  - os: windows
+    command: "$HELM_PLUGIN_DIR/run.cmd"
+  - os: linux
+    command: "$HELM_PLUGIN_DIR/run.sh"
+  - os: darwin
+    command: "$HELM_PLUGIN_DIR/run.sh"
+  - command: "$HELM_PLUGIN_DIR/run.sh"
